@@ -10,6 +10,8 @@
   font-style: normal;
 }
 
+
+
 body{
   margin:0;
   position: relative;
@@ -70,9 +72,6 @@ border-radius: 0 !important;
 width: 100%;
 }
 
-:where(.css-dev-only-do-not-override-1vtf12y).ant-modal .ant-modal-content{
-  position: absolute;
-}
 
 .circle{
   width: 7px;
@@ -123,6 +122,7 @@ width: 100%;
   height: 30px;
   border-radius: 50%;
   margin-left: 12px;
+  object-fit: cover;
 }
 
 .links-section{
@@ -150,10 +150,12 @@ width: 100%;
 
 .login-container{
   display: flex;
+  height: 100%;
 }
 
 .register-container{
   display: flex;
+  height: 100%;
 }
 
 .first-half{
@@ -178,7 +180,7 @@ width: 100%;
 }
 
 .login-form-container{
-  margin-top: 15em;
+  margin-top: 40%;
   align-content: center;
   justify-content: center;
   display: flex;
@@ -229,6 +231,7 @@ width: 100%;
 
 .login-background-image{
   margin-bottom: -4px;
+  height: 100%;
 }
 
 .login-footer-text > a{
@@ -237,6 +240,7 @@ width: 100%;
 
 .register-background-image{
   margin-bottom: -4px;
+  height: 100%;
 }
 
 .password-label-container{
@@ -261,6 +265,10 @@ width: 100%;
   margin-top: 15em;
   font-size: 14px;
   text-align: center;
+}
+
+.register-footer-text > a{
+  text-decoration: none;
 }
 
 .sign-up-text{
@@ -318,6 +326,7 @@ width: 100%;
   height: 50px;
   border-radius: 50%;
   margin-left: 1rem;
+  object-fit: cover;
 }
 
 .mobile-menu {
@@ -414,6 +423,7 @@ width: 100%;
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .boldTitle {
@@ -520,6 +530,7 @@ tr:hover .actions{
   height: 50px;
   border-radius: 5px;
   margin-right: 15px;
+  object-fit: cover;
 }
 
 aside{
@@ -661,6 +672,11 @@ aside{
 .search-input-posts{
     width: 300px;
   }
+
+  html, body, .ant-modal {
+    min-height: 100% !important;
+    height: 100%;
+}
 
 @media only screen and (max-width:300px){
   .nav-posts,.blog-title-posts-section,.blog-content-posts-section{
@@ -806,10 +822,6 @@ aside{
   .login-footer-text-container{
     margin-top: 0;
   }
-
-  .register-footer-text-container{
-    margin-top: 0;
-  }
   
   .fistname-container-signup > input, .lastname-container-signup > input{
     width: 100%;
@@ -820,7 +832,7 @@ aside{
   }
 
   .register-form-container{
-    margin-top: 150px;
+    margin-top:40%;
   }
 
   .navbar{
@@ -834,6 +846,10 @@ aside{
   .profile-details > p,.profile-backside > p
   {
     font-size: 14px;
+  }
+
+  .register-footer-text-container{
+    padding-bottom: 50px;
   }
 
   .nav-posts,.blog-title-posts-section,.blog-content-posts-section{
@@ -871,6 +887,11 @@ aside{
     box-sizing: border-box;
   }
 
+  .register-footer-text-container{
+    margin-top: 0;
+    padding-bottom: 50px;
+  }
+
   .login-logo{
     padding: 0px;
   }
@@ -893,6 +914,7 @@ aside{
 
   .login-footer-text-container{
     margin-top: 100px;
+    padding-bottom: 50px;
   }
   
   .login-form-container{
